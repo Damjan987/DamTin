@@ -220,6 +220,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TouristManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -297,6 +298,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TouristManager\Index.cshtml" />
+    <Content Include="Views\TouristManager\Create.cshtml" />
+    <Content Include="Views\TouristManager\Edit.cshtml" />
+    <Content Include="Views\TouristManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,6 +316,24 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DamTin.Core\DamTin.Core.csproj">
+      <Project>{51b9ff85-4351-4e55-9c12-f11e59974ea7}</Project>
+      <Name>DamTin.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DamTin.DataAccess.InMemory\DamTin.DataAccess.InMemory.csproj">
+      <Project>{a1db4862-0ae5-437c-939b-f65eacb9b241}</Project>
+      <Name>DamTin.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DamTin.DataAccess.SQL\DamTin.DataAccess.SQL.csproj">
+      <Project>{4e5e270d-3906-4dc1-9ce5-d5ad07e278a7}</Project>
+      <Name>DamTin.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DamTin.Services\DamTin.Services.csproj">
+      <Project>{5b6a7e24-6976-4a5f-b312-70720c36b130}</Project>
+      <Name>DamTin.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
