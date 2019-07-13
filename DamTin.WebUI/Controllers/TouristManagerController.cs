@@ -10,11 +10,11 @@ namespace DamTin.WebUI.Controllers
 {
     public class TouristManagerController : Controller
     {
-        TouristRepository context;
+        InMemoryRepository<Tourist> context;
 
         public TouristManagerController()
         {
-            context = new TouristRepository();
+            context = new InMemoryRepository<Tourist>();
         }
 
         public ActionResult Index()

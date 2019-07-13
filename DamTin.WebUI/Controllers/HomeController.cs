@@ -26,5 +26,20 @@ namespace DamTin.WebUI.Controllers
 
             return View();
         }
+
+        public ActionResult LearnMore()
+        {
+            return View();
+        }
+
+        public ActionResult Pictures()
+        {
+            return View();
+        }
+
+        public ActionResult DaysLeft()
+        {
+            return View();
+        }
     }
 }

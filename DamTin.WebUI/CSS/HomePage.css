@@ -1,0 +1,23 @@
+﻿body {
+}
+
+.centar {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.borderize {
+    border: 5px solid yellow;
+    text-align: center;
+    font-size: large;
+    border-radius: 50px;
+    padding: 15px;
+    margin-top: 45px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.marginBottom {
+    margin-bottom: 20px;
+}

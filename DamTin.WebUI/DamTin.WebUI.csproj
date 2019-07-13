@@ -231,10 +231,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\ApartmentImages\app_logo.png" />
+    <Content Include="Content\ApartmentImages\image for app.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CSS\HomePage.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -302,6 +305,9 @@
     <Content Include="Views\TouristManager\Create.cshtml" />
     <Content Include="Views\TouristManager\Edit.cshtml" />
     <Content Include="Views\TouristManager\Delete.cshtml" />
+    <Content Include="Views\Home\LearnMore.cshtml" />
+    <Content Include="Views\Home\Pictures.cshtml" />
+    <Content Include="Views\Home\DaysLeft.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

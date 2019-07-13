@@ -1,0 +1,293 @@
+﻿
+@{
+    ViewBag.Title = "DaysLeft";
+}
+
+<style>
+    .daysleft {
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    .makeitgreen {
+        color: #009688;
+    }
+
+    .littledown {
+        margin-top: 15px;
+    }
+
+    .littledown2 {
+        padding-top: 15px;
+    }
+
+    #container {
+        width: 80%;
+    }
+
+    #left {
+        float: left;
+        width: 100px;
+    }
+
+    #right {
+        float: right;
+        width: 100px;
+    }
+
+    #center {
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(bg.jpg);
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .calendar {
+        width: 300px;
+        height: auto;
+        background: #fff;
+        box-sizing: border-box;
+    }
+
+    .calendar .date {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+        box-sizing: border-box;
+    }
+
+    .calendar .date div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        color: #262626;
+    }
+
+    .calendar .date div.day {
+        font-weight: 700;
+    }
+
+    /*
+    .calendar .date div.day:first-child,
+    .calendar .date div.number:nth-child(7n + 1) {
+        color: #ff685d;
+        font-weight: 700;
+    }
+    */
+
+    .calendar .date div.number.active {
+        background: #009688;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h2 class="daysleft">DaysLeft (<strong class="makeitgreen">Green</strong> means free)</h2>
+    <div id="container">
+
+        <div id="left">
+            <div class="calendar">
+                <h3>June | 2020</h3>
+                <div class="date">
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day">S</div>
+                    <div class="day">S</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                    <div class="number">10</div>
+                    <div class="number active">11</div>
+                    <div class="number">12</div>
+                    <div class="number">13</div>
+                    <div class="number">14</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">15</div>
+                    <div class="number">16</div>
+                    <div class="number">17</div>
+                    <div class="number">18</div>
+                    <div class="number">19</div>
+                    <div class="number">20</div>
+                    <div class="number">21</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">22</div>
+                    <div class="number">23</div>
+                    <div class="number">24</div>
+                    <div class="number">25</div>
+                    <div class="number">26</div>
+                    <div class="number">27</div>
+                    <div class="number">28</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">29</div>
+                    <div class="number">30</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right">
+            <div class="calendar">
+                <h3>August | 2020</h3>
+                <div class="date">
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day">S</div>
+                    <div class="day">S</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">10</div>
+                    <div class="number active">11</div>
+                    <div class="number">12</div>
+                    <div class="number">13</div>
+                    <div class="number">14</div>
+                    <div class="number">15</div>
+                    <div class="number">16</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">17</div>
+                    <div class="number">18</div>
+                    <div class="number">19</div>
+                    <div class="number">20</div>
+                    <div class="number">21</div>
+                    <div class="number">22</div>
+                    <div class="number">23</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">24</div>
+                    <div class="number">25</div>
+                    <div class="number">26</div>
+                    <div class="number">27</div>
+                    <div class="number">28</div>
+                    <div class="number">29</div>
+                    <div class="number">30</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">31</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="center">
+            <div class="calendar">
+                <h3 class="littledown2">July | 2020</h3>
+                <div class="date littledown">
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day">S</div>
+                    <div class="day">S</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                    <div class="number">10</div>
+                    <div class="number active">11</div>
+                    <div class="number">12</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">13</div>
+                    <div class="number">14</div>
+                    <div class="number">15</div>
+                    <div class="number">16</div>
+                    <div class="number">17</div>
+                    <div class="number">18</div>
+                    <div class="number">19</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">20</div>
+                    <div class="number">21</div>
+                    <div class="number">22</div>
+                    <div class="number">23</div>
+                    <div class="number">24</div>
+                    <div class="number">25</div>
+                    <div class="number">26</div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number"></div>
+                    <div class="number">27</div>
+                    <div class="number">28</div>
+                    <div class="number">29</div>
+                    <div class="number">30</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
