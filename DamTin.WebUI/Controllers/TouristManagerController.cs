@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DamTin.Core.Contracts;
 using DamTin.Core.Models;
 using DamTin.DataAccess.InMemory;
 
@@ -10,11 +11,11 @@ namespace DamTin.WebUI.Controllers
 {
     public class TouristManagerController : Controller
     {
-        InMemoryRepository<Tourist> context;
+        IRepository<Tourist> context;
 
-        public TouristManagerController()
+        public TouristManagerController(IRepository<Tourist> touristContext)
         {
-            context = new InMemoryRepository<Tourist>();
+            context = touristContext;
         }
 
         public ActionResult Index()
